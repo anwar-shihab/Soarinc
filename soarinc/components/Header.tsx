@@ -39,7 +39,7 @@ const Header = () => {
                       <IconButton src="/assets/images/profile.png" alt="avatar" width={60} height={60} link="/profile" />
                   </div>
               </div>
-              <Image className='lg:hidden' src="/assets/images/profile.png" alt="logo" width={35} height={35} />
+              <Image priority className='lg:hidden' src="/assets/images/profile.png" alt="logo" width={35} height={35} />
           </header>
           <div className="relative lg:hidden mb-5">
               <input type="text" placeholder="Search for something?" className="w-full h-10 px-5 text-sm text-secondary font-inter bg-foreground rounded-3xl focus:outline-none focus:ring-0 pl-10" />
