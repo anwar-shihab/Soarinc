@@ -6,7 +6,7 @@ import Image from 'next/image'
 const CreditCards = () => {
   return (
     <div className="">
-          <div className="flex justify-between items-center mb-5">
+          <div className="flex justify-between items-center mb-5 ">
           <p className='text-md font-semibold lg:text-2xl'>My Cards</p>
           <p className='text-sm font-semibold lg:text-lg'>All Cards</p>
           </div>
