@@ -13,9 +13,10 @@ const Header = () => {
               <nav className='relative lg:w-[220px]'>
                   <Sidenav />
               </nav>
-              <h3 className='font-inter font-semibold text-xl lg:text-2xl leading-6 text-primary lg:pl-[65px] '>  
+              <h2 className='font-inter font-semibold text-xl lg:text-2xl leading-6 text-primary lg:pl-[65px] '>  
                 {pathname==='/' ? 'Overview' :pathname==='/settings' ? 'Settings' : ''}
-              </h3>
+              </h2>
+              
               <div className="hidden lg:ml-auto lg:flex">
                   <div className="flex gap-7">
                       <div className=" relative hidden lg:block w-[255px]">
