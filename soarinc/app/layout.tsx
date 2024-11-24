@@ -3,16 +3,52 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const inter = localFont({
+  src: [
+    {
+      path: "./fonts/Inter-Thin.woff",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Inter-Light.woff",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Inter-Regular.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Inter-Medium.woff",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Inter-SemiBold.woff",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Inter-Bold.woff",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Inter-ExtraBold.woff",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Inter-Black.woff",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-inter",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,7 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} antialiased`}
       >
         <div className="">
           <Header/>
