@@ -38,7 +38,7 @@ const CreditCards = () => {
 
 
                       <div className={`absolute rounded-b-2xl h-25px px-[17px] flex justify-between items-center py-4 px-5 w-full left-0 bottom-0 ${index % 2 === 1 ? 'border border-cardBorder' : 'bg-custom-opacity-gradient'}`}>
-                        <p className={`${index % 2 === 1 ? 'invert' : ''}`}>{card.number}</p>
+                        <p className={`${index % 2 === 1 ? 'invert' : ''} font-semibold text-base lg:text-xl`}>{card.number}</p>
                         <Image priority className={`${index % 2 === 1 ? 'invert' : ''}`} src="/assets/images/cate.svg" width={27} height={18} alt="card-type" />
                       </div>
                     </CarouselItem>
@@ -74,7 +74,7 @@ const CreditCards = () => {
 
 
                       <div className={`absolute rounded-b-2xl h-25px px-[17px] flex justify-between items-center py-4 px-5 w-full left-0 bottom-0 ${index % 2 === 1 ? 'border border-cardBorder' : 'bg-custom-opacity-gradient'}`}>
-                        <p className={`${index % 2 === 1 ? 'invert' : ''}`}>{card.number}</p>
+                        <p className={`${index % 2 === 1 ? 'invert' : ''} font-semibold lg:text-xl`}>{card.number}</p>
                         <Image priority className={`${index % 2 === 1 ? 'invert' : ''}`} src="/assets/images/cate.svg" width={27} height={18} alt="card-type" />
                       </div>
                     </div>
