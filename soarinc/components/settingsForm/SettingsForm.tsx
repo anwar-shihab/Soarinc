@@ -14,7 +14,7 @@ import { useState } from "react"
 type CardProps = React.ComponentProps<typeof Card>
 
 export function SettingsForm({ className, ...props }: CardProps) {
-  const [tab, setTab] = useState<Number>(1);
+  const [tab, setTab] = useState<number>(1);
 
     const activeClass="border-b-2 border-[#232323] text-[#232323]"
   return (

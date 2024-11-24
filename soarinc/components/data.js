@@ -1,5 +1,3 @@
-import { act } from "react";
-
 export const NavData = [
   {
     name: "Dashboard",
@@ -7,7 +5,6 @@ export const NavData = [
     icon: "/assets/images/home-in.png",
     active: "/assets/images/home.png",
   },
-
   {
     name: "Transactions",
     href: "/transactions",
