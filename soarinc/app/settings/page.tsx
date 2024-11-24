@@ -1,5 +1,11 @@
 import { SettingsForm } from '@/components/settingsForm/SettingsForm'
+import { Metadata } from 'next';
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: "Settings | Soarinc",
+  description: "Settings page for updating profile and preferences",
+};
 
 const page = () => {
   return (
