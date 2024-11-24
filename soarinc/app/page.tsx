@@ -1,14 +1,9 @@
 import { BarCharts } from '@/components/BarCharts'
 import CreditCards from '@/components/CreditCards'
-import { cards, transactions } from '@/components/data'
 import { Employees } from '@/components/Employees'
-import IconButton from '@/components/IconButton'
 import { LineCharts } from '@/components/LineCharts'
 import { PieCharts } from '@/components/PieCharts'
 import Recents from '@/components/Recents'
-import { Card } from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import Image from 'next/image'
 import React from 'react'
 
 const page = () => {

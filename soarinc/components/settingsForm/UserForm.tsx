@@ -5,10 +5,8 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { userSchema } from "@/lib/validation";
-import { Input } from "../ui/input";
 
 
-// Infer the schema type
 type UserSchema = z.infer<typeof userSchema>;
 
 
