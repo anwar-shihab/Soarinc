@@ -15,7 +15,7 @@ const CreditCards = () => {
               {
                 cards.map((card, index) => {
                   return (
-                    <CarouselItem key={index} className={`relative ml-5 basis-3/4 lg:basis-2/2 h-[198px] lg:h-[235px] rounded-2xl text-background py-[20px] px-[17px] ${index % 2 === 1 ? 'bg-background border border-cardBorder' : 'bg-custom-gradient'}`}>
+                    <CarouselItem key={index} className={`relative ml-5 basis-3.4/4 lg:basis-2/2 h-[198px] lg:h-[235px] rounded-2xl text-background py-[20px] px-[17px] ${index % 2 === 1 ? 'bg-background border border-cardBorder' : 'bg-custom-gradient'}`}>
                       <div className={`flex justify-between items-center mb-6 ${index % 2 === 1 ? 'invert' : ''}`}>
                         <div className="inline">
                           <div className="text-normal font-lato text-xs text-left">Balance</div>
