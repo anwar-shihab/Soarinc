@@ -32,7 +32,7 @@ const chartConfig = {
 export function LineCharts() {
   return (
     <Card className="bg-background rounded-3xl">
-      <CardContent>
+      <CardContent className="pl-0 md:pl-6">
         <ChartContainer config={chartConfig}>
           <AreaChart
             accessibilityLayer
