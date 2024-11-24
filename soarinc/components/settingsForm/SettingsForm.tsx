@@ -36,7 +36,6 @@ export function SettingsForm({ className, ...props }: CardProps) {
         {
           tab===1?<Image src="/assets/images/profile.svg" width={100} height={100} alt="profile-image" className="mx-auto mt-[45px] mb-4 cursor-pointer lg:m-0 lg:mb-auto" />:<>  </>
         }
-          {/* <Image src="/assets/images/profile.svg" width={100} height={100} alt="profile-image" className="mx-auto mt-[45px] mb-4 cursor-pointer lg:m-0 lg:mb-auto" /> */}
         {
           tab===1?<UserForm />:tab===2?<>Preferences</>:tab===3?<>Security</>:""
         }
