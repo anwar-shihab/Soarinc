@@ -44,10 +44,10 @@ export function Employees() {
             <Input type="text" placeholder="0.00" className="ml-auto w-[50%] lg:w-[75%] pr-[96px] lg:py-[25px] lg:px-[16px]  rounded-[50px] text-left custom-placeholder focus:outline-none focus:border-0 focus:shadow-none outline-none bg-[#EDF1F7] border-[#718EBF] text-[#718EBF] font-normal lg:text-base" />
 
             <div className="lg:hidden">
-            <IconButton src="/assets/images/send.svg" alt="send" width={16.11} height={14} link="/" style="bg-[#232323] absolute  left-auto right-[0px] top-0 px-[20px] py-[12px] lg:px-[24px] lg:py-[14px] left-0 rounded-[50px]" text="Send"  />
+            <IconButton src="/assets/images/send.svg" alt="send-icon" width={16.11} height={14} link="/" style="bg-[#232323] absolute  left-auto right-[0px] top-0 px-[20px] py-[12px] lg:px-[24px] lg:py-[14px] left-0 rounded-[50px]" text="Send"  />
             </div>
             <div className="hidden lg:block">
-            <IconButton src="/assets/images/send.svg" alt="send" width={26} height={22.6} link="/" style="bg-[#232323] absolute  left-auto right-[0px] top-0 px-[20px] py-[12px] lg:px-[24px] lg:py-[14px] left-0 rounded-[50px]" text="Send"  />
+            <IconButton src="/assets/images/send.svg" alt="send-icon" width={26} height={22.6} link="/" style="bg-[#232323] absolute  left-auto right-[0px] top-0 px-[20px] py-[12px] lg:px-[24px] lg:py-[14px] left-0 rounded-[50px]" text="Send"  />
             </div>
           </div>
     </Carousel>
