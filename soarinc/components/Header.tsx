@@ -9,7 +9,7 @@ import Sidenavbar from './navbar/Sidenavbar'
 const Header = () => {
   const pathname = usePathname();
   return (
-    <div className='fixed pl-5 pr-5 pt-5 lg:pt-7 lg:pb-7 lg:pl-0 w-full bg-background  lg:border-b border-border top-0 z-[49]'>
+    <div className='fixed pl-5 pr-5 lg:pt-5 lg:pt-7 lg:pb-7 lg:pl-0 w-full bg-background  lg:border-b border-border top-0 z-[49]'>
           <header className='flex pb-3 font-inter items-center justify-between relative lg:justify-start'>
               <nav className='relative lg:w-[220px]'>
           <Sidenav />
