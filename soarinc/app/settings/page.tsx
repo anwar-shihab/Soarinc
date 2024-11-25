@@ -1,6 +1,4 @@
-import Sidenavbar from '@/components/navbar/Sidenavbar';
 import { SettingsForm } from '@/components/settingsForm/SettingsForm'
-import Test from '@/components/test';
 import { Metadata } from 'next';
 import React from 'react'
 
