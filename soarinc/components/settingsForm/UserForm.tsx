@@ -10,7 +10,7 @@ import { userSchema } from "@/lib/validation";
 type UserSchema = z.infer<typeof userSchema>;
 
 
-export function UserForm() {
+export function UserForm({image}:{image:string}) {
   const {
     register,
     handleSubmit,

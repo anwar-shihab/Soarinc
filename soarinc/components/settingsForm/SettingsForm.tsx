@@ -8,13 +8,43 @@ import {
 
 import { UserForm } from "./UserForm"
 import Image from "next/image"
-import { useState } from "react"
+import { useRef, useState } from "react"
 
 
 type CardProps = React.ComponentProps<typeof Card>
 
 export function SettingsForm({ className, ...props }: CardProps) {
   const [tab, setTab] = useState<number>(1);
+  const [image, setImage] = useState<string>("");
+    const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleImageClick = () => {
+    if (fileInputRef.current) {
+      fileInputRef.current.click(); 
+    }
+  };
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.files && event.target.files.length > 0) {
+      const file = event.target.files[0];
+
+      const validTypes = ["image/jpeg", "image/png"];
+      if (!validTypes.includes(file.type)) {
+        alert("Only JPG and PNG files are allowed.");
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = () => {
+        const base64String = reader.result as string;
+        setImage(base64String);
+      };
+      reader.onerror = () => {
+        console.error("File could not be read!");
+      };
+      reader.readAsDataURL(file); 
+    }
+    }
+  
 
     const activeClass="border-b-2 border-[#232323] text-[#232323]"
   return (
@@ -34,10 +64,21 @@ export function SettingsForm({ className, ...props }: CardProps) {
       </CardHeader>
       <CardContent className="lg:flex gap-2 lg:gap-11">
         {
-          tab===1?<Image src="/assets/images/profile.svg" width={100} height={100} alt="profile-image" className="mx-auto mt-[45px] mb-4 cursor-pointer lg:m-0 lg:mb-auto" />:<>  </>
+          tab === 1 ?
+            <div className="">
+              <Image src="/assets/images/profile.svg" width={100} height={100} alt="profile-image" className="mx-auto mt-[45px] mb-4 cursor-pointer lg:m-0 lg:mb-auto"  onClick={handleImageClick}/>
+              <input
+                type="file"
+                accept="image/jpeg, image/png"
+        ref={fileInputRef}
+        className="hidden"
+        onChange={handleFileChange}
+      />
+            </div>
+            : <>  </>
         }
         {
-          tab===1?<UserForm />:tab===2?<>Preferences</>:tab===3?<>Security</>:""
+          tab===1?<UserForm image={image}/>:tab===2?<>Preferences</>:tab===3?<>Security</>:""
         }
       </CardContent>
     </Card>
