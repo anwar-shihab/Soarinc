@@ -21,6 +21,7 @@ export function UserForm({image}:{image:string}) {
 
   const onSubmit = (data: UserSchema) => {
     console.log("Form Data:", data);
+    console.log("Image Data:", image); 
   };
 
   return (
