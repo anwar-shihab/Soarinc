@@ -32,7 +32,7 @@ const page = () => {
           <Employees />      
         </div>
 
-        <div className="xl:w-[515px] h-max-[full] md:mt-5 lg:ml-4 xl:mt-0">
+        <div className="xl:w-[515px] h-max-[full] md:mt-5 lg:ml-4 xl:mt-0 mb-[40px]">
           <h3 className='text-md font-semibold lg:text-2xl text-left mb-5'>Balance History</h3>
           <LineCharts />
         </div>
