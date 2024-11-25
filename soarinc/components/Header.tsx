@@ -4,14 +4,16 @@ import Sidenav from './navbar/Sidenav'
 import Image from 'next/image'
 import IconButton from './IconButton'
 import { usePathname } from 'next/navigation'
+import Sidenavbar from './navbar/Sidenavbar'
 
 const Header = () => {
   const pathname = usePathname();
   return (
-    <div className='fixed pl-5 pr-5 pt-5 lg:pt-7 lg:pb-7 lg:pl-0 w-full bg-background  lg:border-b border-border top-0 z-[100]'>
+    <div className='fixed pl-5 pr-5 pt-5 lg:pt-7 lg:pb-7 lg:pl-0 w-full bg-background  lg:border-b border-border top-0 z-[49]'>
           <header className='flex pb-3 font-inter items-center justify-between relative lg:justify-start'>
               <nav className='relative lg:w-[220px]'>
-                  <Sidenav />
+          <Sidenav />
+          <Sidenavbar/>
               </nav>
               <h2 className='font-inter font-semibold text-xl lg:text-2xl leading-6 text-primary lg:pl-[65px] '>  
                 {pathname==='/' ? 'Overview' :pathname==='/settings' ? 'Settings' : ''}

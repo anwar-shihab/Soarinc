@@ -13,7 +13,7 @@ const Sidenav = () => {
       : 'text-lg font-medium text-muted'; 
   };
   return (
-    <div className="relative">
+    <div className="relative hidden md:block">
           <Image src="/assets/images/ham.png" alt="logo" width={14} height={18} className='lg:hidden' /> 
           <div className='fixed text-primary hidden lg:block h-screen top-0 pt-10 px-8  border-r border-border bg-background'>
               <div className="flex align-center gap-2">

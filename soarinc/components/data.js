@@ -11,7 +11,12 @@ export const NavData = [
     icon: "/assets/images/transfer.png",
     active: "/assets/images/transfer-ds.png",
   },
-  { name: "Accounts", href: "/accounts", icon: "/assets/images/account.png" },
+  {
+    name: "Accounts",
+    href: "/accounts",
+    icon: "/assets/images/account.png",
+    active: "/assets/images/account-ds.png",
+  },
   {
     name: "Credit Cards",
     href: "/credit-cards",
